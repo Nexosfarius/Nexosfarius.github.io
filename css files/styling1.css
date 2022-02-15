@@ -1,7 +1,110 @@
+@media print {
+  * {
+    display: none;
+  }
+}
+@media (max-width:640px) {
+  #Site_Menu {
+    display:none;
+  }
+  h1 {
+    color:white;
+    text-align: left;
+  }
+  p {
+    color: white;
+    font-weight: 600;
+  }
+  div {
+    color: white;
+  }
+  ul {
+    color: white;
 
-h1 {background-color: pink;
+  }
+  li {
+    color: white;
+  }
+}
+@media (min-width:641px) {
+  div {
+    border-style: solid;
+    border-width: thick;
+  }
+  h1 {
+    border-style: solid;
+    border-width: thick;
+  }
+}
+h1 {
+  text-align: center;
+
+  margin-left: 350px;
+  margin-right: 350px;
+  font-family: "Times New Roman", serif;
+  font-weight: bolder;
+}
+p {
+  color: black;
+  font-family: "Times New Roman", serif;
+  font-weight: bolder;
+}
+body {
+   background-image: url("https://eatsleepworkrepeat.com/wp-content/uploads/2019/03/Matrix-GIF.gif");
 }
 
-body {
+a:link {
+  color: black;
+}
+a:visited {
+  color: black;
+}
+ul {
+  font-weight: bolder;
+}
+li {
+  font-weight: bolder;
+}
+table, th, td {
+  border: 1px solid;
+  text-align: center;
   background-color: lightblue;
+  font-weight: bolder;
+}
+form {
+  width: 700px;
+  border-style: solid;
+  border-width: thick;
+}
+.menuList {
+  list-style-type: upper-roman;
+}
+#Site_Menu {
+  background-color:red;
+  margin-right: 1000px;
+  margin-left: 10px;
+}
+#Basic_Information {
+  background-color:orange;
+}
+#Education {
+  background-color:yellow;
+}
+#Experience {
+  background-color:green;
+}
+#Programming_Skills {
+  background-color:blue;
+}
+#Interests {
+  background-color:indigo;
+}
+#Favorite_Videos {
+  background-color:violet;
+}
+#Favorite_Website {
+  background-color:gold;
+}
+#Projects {
+  background-color:silver;
 }
