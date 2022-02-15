@@ -36,6 +36,17 @@
     border-width: thick;
   }
 }
+
+.profile {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  position: relative;
+    top: -150px;
+    right: -190px;
+}
 h1 {
   text-align: center;
 
