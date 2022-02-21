@@ -23,10 +23,11 @@
     color: white;
   }
 }
-@media (min-width:641px) {
+@media (min-width:700px) {
   div {
     border-style: solid;
     border-width: thick;
+    border-width:
   }
   h1 {
     border-style: solid;
