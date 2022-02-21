@@ -4,9 +4,6 @@
   }
 }
 @media (max-width:640px) {
-  #Site_Menu {
-    display:none;
-  }
   h1 {
     color:white;
     text-align: left;
@@ -58,23 +55,23 @@ h1 {
 p {
   color: black;
   font-family: "Times New Roman", serif;
-  font-weight: bolder;
+  font-weight: bold;
 }
 body {
    background-image: url("https://eatsleepworkrepeat.com/wp-content/uploads/2019/03/Matrix-GIF.gif");
 }
 
 a:link {
-  color: black;
+  color: white;
 }
 a:visited {
-  color: black;
+  color: white;
 }
 ul {
-  font-weight: bolder;
+  font-weight: bold;
 }
 li {
-  font-weight: bolder;
+  font-weight: bold;
 }
 table, th, td {
   border: 1px solid;
