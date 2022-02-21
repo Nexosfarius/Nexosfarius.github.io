@@ -33,7 +33,9 @@
     border-width: thick;
   }
 }
-
+* {
+  color: black;
+}
 .profile {
   border-radius: 50%;
   display: block;
