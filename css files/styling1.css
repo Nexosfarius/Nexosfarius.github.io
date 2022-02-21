@@ -23,17 +23,7 @@
     color: white;
   }
 }
-@media (min-width:700px) {
-  div {
-    border-style: solid;
-    border-width: thick;
-    border-width:
-  }
-  h1 {
-    border-style: solid;
-    border-width: thick;
-  }
-}
+
 .profile {
   border-radius: 50%;
   display: block;
