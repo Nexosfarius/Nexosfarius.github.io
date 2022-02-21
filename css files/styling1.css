@@ -47,6 +47,9 @@ p {
   font-family: "Times New Roman", serif;
   font-weight: bold;
 }
+body {
+   background-color: grey;
+ }
 
 a:link {
   color: black;
