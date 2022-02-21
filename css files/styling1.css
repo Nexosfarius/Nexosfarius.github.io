@@ -62,13 +62,14 @@ body {
 }
 
 a:link {
-  color: white;
+  color: black;
 }
 a:visited {
-  color: white;
+  color: black;
 }
 ul {
   font-weight: bold;
+  color: black;
 }
 li {
   font-weight: bold;
