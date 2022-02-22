@@ -29,23 +29,23 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
-  position: relative;
-    top: -150px;
-    right: -190px;
+  width: 40%;
+  border: 5px solid white;
+
+}
+div {
+  padding: 10px;
 }
 h1 {
   text-align: center;
-
-  margin-left: 350px;
-  margin-right: 350px;
+  padding-top: 10px;
   font-family: "Times New Roman", serif;
   font-weight: bolder;
 }
 p {
   color: black;
   font-family: "Times New Roman", serif;
-  font-weight: bold;
+  font-weight: bolder;
 }
 body {
    background-color: grey;
@@ -74,35 +74,38 @@ form {
   width: 700px;
   border-style: solid;
   border-width: thick;
+  padding-bottom: 10px;
 }
 .menuList {
-  list-style-type: upper-roman;
+  font-weight:bold;
+  margin-left:30px;">;
 }
 #Site_Menu {
   background-color:red;
-
+  margin-right: 750px;
+  margin-left: 10px;
 }
 #Basic_Information {
-  background-color:orange;
+  background-color:#FF3131;
 }
 #Education {
-  background-color:yellow;
+  background-color:orange;
 }
 #Experience {
-  background-color:green;
+  background-color:yellow;
 }
 #Programming_Skills {
-  background-color:blue;
+  background-color:green;
 }
 #Interests {
-  background-color:indigo;
+  background-color:lightblue;
 }
 #Favorite_Videos {
-  background-color:violet;
+  background-color:indigo;
 }
 #Favorite_Website {
-  background-color:gold;
+  background-color:violet;
 }
 #Projects {
-  background-color:silver;
+  background-color:gold;
 }
