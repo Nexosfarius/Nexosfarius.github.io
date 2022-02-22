@@ -12,53 +12,63 @@
 
   </head>
   <body>
-    <style> * {
+
+    <style>
+    * {
       color: black;
     }
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
     </style>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <div id=Site_Menu>
-    <h1 style="text-align:center;margin-left:70px;margin-right:95px;"> Site Menu </h1>
-      <p>
-        Please select which section you would like to view.
-      </p>
-      <ul class = "menuList";> <span style="font-weight:bold">
-        <li> <a href="#Basic_Information"> Basic Information </a></li>
-        <li> <a href="#Education"> Education </a></li>
-        <li> <a href="#Experience"> Experience </a></li>
-        <li> <a href="#Programming_Skills"> Programmming Skills </a></li>
-        <li> <a href="#Interests"> Interests </a></li>
-        <li> <a href="#Favorite_Videos"> Favorite Song, Film, and TV Show </a></li>
-        <li> <a href="#Favorite_Website"> Favorite Websites </a></li>
-        <li> <a href="#Projects"> Projects </a></li>  </span>
-      </ul>
-    </div>
 
+
+      <div id=Site_Menu>
+  </div>
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center fixed-top">
+      <ul class = "menuList navbar-nav">
+        <li class="nav-item active"> <a class="nav-link" href="#Basic_Information"> Basic Information </a></li>
+        <li class="nav-item active"> <a class="nav-link" href="#Education"> Education </a></li>
+        <li class="nav-item active"> <a class="nav-link" href="#Experience"> Experience </a></li>
+        <li class="nav-item active"> <a class="nav-link" href="#Programming_Skills"> Programmming Skills </a></li>
+        <li class="nav-item active"> <a class="nav-link" href="#Interests"> Interests </a></li>
+        <li class="nav-item active"> <a class="nav-link" href="#Favorite_Videos"> Favorite Song, Film, and TV Show </a></li>
+        <li class="nav-item active"> <a class="nav-link" href="#Favorite_Website"> Favorite Websites </a></li>
+        <li class="nav-item active"> <a class="nav-link" href="#Projects"> Projects </a></li>
+      </ul>
+      </nav>
+<br>
+<br>
+<br>
     <img class = "profile"; src="https://avatars.githubusercontent.com/u/88285836?v=4">
-    <div class = "container";>
-    <div id=Basic_Information>
-      <h1> &#128206 Basic Information &#128206 </h1>
-      <p> My name is Mohammed Buksh but I prefer to go by my middle name Tahir.
-        While my current major is Computer Science, my previous major was Biomedical Science.
-        I changed to Computer Science over the 2021 summer vacation so I am very new to the field of coding and computers.
-        I"m 20 years old as of this past December and my current goals in college are to explore the field of computer science to see where I would like to work in the future.
-      </p>
-      <p style="text-align:center;"> <a href="#Site_Menu"> Back to Site Menu </a> </p>
-    </div>
+<br>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6" id=Basic_Information>
+          <h1 style="white-space:nowrap; text-align:center; padding:10px; "> &#128206 Basic Information &#128206 </h1>
+<br>
+          <p> My name is Mohammed Buksh but I prefer to go by my middle name Tahir.
+            While my current major is Computer Science, my previous major was Biomedical Science.
+            I changed to Computer Science over the 2021 summer vacation so I am very new to the field of coding and computers.
+            I"m 20 years old as of this past December and my current goals in college are to explore the field of computer science to see where I would like to work in the future.
+          </p>
+        </div>
+          <div class="col-md-6" id=Education>
+            <h1> &#129504 Education &#129504 </h1>
+            <h3> Highschool: Forest Hills High School: 2015-2019 </h3>
+            <p> Graduated with honors and the completion of an advanced regents diploma representing high scores on all regents. </p>
+            <h3> College: St. John's University: 2019-2023 </h3>
+            <p> This is currently in progress. I hope to graduate with a Bachelor's in Computer Science in 2023. </p>
+        </div>
+      </div>
     </div>
 <br>
-    <div id=Education>
-      <h1> &#129504 Education &#129504 </h1>
-      <h3> Highschool: Forest Hills High School: 2015-2019 </h3>
-        <p> Graduated with honors and the completion of an advanced regents diploma representing high scores on all regents. </p>
-      <h3> College: St. John's University: 2019-2023 </h3>
-        <p> This is currently in progress. I hope to graduate with a Bachelor's in Computer Science in 2023. </p>
-      <p style="text-align:center;"> <a href="#Site_Menu"> Back to Site Menu </a> </p>
-    </div>
-<br>
-    <div id=Experience>
+      <div class="container";><div class="row"><div class="col-md-8" id=Experience>
       <h1> &#128736 Experience &#128736 </h1>
       <ul>  <li> Study Abroad in Japan: During the summer of 2017, I studied abroad in Japan where I met with and spoke often with locals to learn the language efficiently.
         I also helped locals collect and dispose of cans and garbage by walking around neighborhoods picking up bags and taking them to a local park where the garbage and recycling would be sorted.
@@ -66,25 +76,26 @@
         <li> Lab Work: For the first 2 years of college, while I was in the Biomedical Sciences major, I was able to gain a lot of lab experience where I worked both in groups and separately to conduct and write reports on experiments done in class.
         From this, I also learned how to work in fast-paced environments with dangerous substances being nearby. I also learned to handle volatile substances with care and to perform research on those substances before and after the experients.</li>
       </ul>
-      <p style="text-align:center;"> <a href="#Site_Menu"> Back to Site Menu </a> </p>
     </div>
+    <div class="col-md-4" id=Programming_Skills>
+  <h4 style="white-space:nowrap; text-align:center; padding-top: 150px;"> &#128187 Programming Skills &#128187 </h4>
+  <ul>  <li> Java: 5 months of experience </li>
+    <li> HTML: 1 month of experience </li>
+    <li> CSS: 2 weeks of experience </li>
+  </ul>
+</div>
+  </div>
+</div>
 <br>
-    <div id=Programming_Skills>
-      <h1> &#128187 Programming Skills &#128187</h1>
-      <ul>  <li> Java: 5 months of experience </li>
-        <li> HTML: 1 month of experience </li>
-        <li> CSS: 2 weeks of experience <li>
-      </ul>
-      <p style="text-align:center;"> <a href="#Site_Menu"> Back to Site Menu </a> </p>
-    </div>
-<br>
-    <div id=Interests>
+      <div class="container" id=Interests>
       <h1> &#127918 Interests &#127918 </h1>
-      <center> <table>
+      <center> <table class="table";>
+        <thead class="thead-dark">
         <tr>
           <th>  Physical Hobby </th>
           <th>  Virtual Hobby </th>
           </tr>
+        </thead>
         <tr>
           <td>  Playing Basketball  </td>
           <td>  Reading Mangas/Manhuas  </td>
@@ -106,56 +117,78 @@
           <td>  Watching Free Online Lectures </td>
         </tr>
       </table> </center>
-      <center style="position:relative; top:10px;"> <img src="https://github.com/NeXoDiUs-GeN/CUS1172_MohammedBuksh_Public/blob/main/Seaview.jpg?raw=true" width=500 height=300> </center>
+      <center style="position:relative; top:-8px;"> <img src="https://github.com/NeXoDiUs-GeN/CUS1172_MohammedBuksh_Public/blob/main/Seaview.jpg?raw=true" width=500 height=300> </center>
 
-      <p style="text-align:center;"> <a href="#Site_Menu"> Back to Site Menu </a> </p>
     </div>
 <br>
-    <div id=Favorite_Videos>
+    <center><div class="container"id=Favorite_Videos>
       <h1> &#127916 Favorite Song, Film, and TV Show &#127916 </h1>
-      <center>
-      <p> Favorite Song </p>
-      <iframe width="500" height="300" src="https://www.youtube.com/embed/zbdp5SZsdu8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <p> Favorite Film </p>
-      <iframe width="500" height="300" src="https://www.youtube.com/embed/kWxPsUVBvII" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <p> Favorite Show </p>
-      <iframe width="500" height="300" src="https://www.youtube.com/embed/nYv1eRMhCPQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </center>
-      <p style="text-align:center;"> <a href="#Site_Menu"> Back to Site Menu </a> </p>
+      <div class ="row"><div class="col-md-6">
+      <h4> Favorite Song </h4>
+      <iframe width="550" style="padding-left:10px;" height="400" src="https://www.youtube.com/embed/zbdp5SZsdu8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
+    <div class="col-md-6">
+        <h4> Favorite Film </h4>
+      <iframe width="550" style="padding-right:20px;" height="400" src="https://www.youtube.com/embed/kWxPsUVBvII" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div></div>
+      <div class="col-md-6">
+      <iframe width="550" height="400" src="https://www.youtube.com/embed/nYv1eRMhCPQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <h4> Favorite Show </h4>
+    </div>
+    </div> </center>
 <br>
-    <div id=Favorite_Website>
+    <div class="container"> <div id=Favorite_Website>
       <h1> &#127760 Favorite Websites &#127760 </h1>
-      <center> <img src="https://images.contentstack.io/v3/assets/blte410e3b15535c144/blt043ffc6bca43bc2a/610c28d84df16d3d6de3cfb9/wq_1_fig_2_1080.jpg " width=25%></center>
-        <h3> <a href="https://www.bungie.net/" target="_blank"> Bungie Main Site</a></h3>
-        <p> This website is the main Bungie website where they post updates and news about their games. I visit this website almost weekly to see what they are adding and/or changing in Destiny 2.</p>
-        <center> <img src="https://esosslfiles-a.akamaihd.net/cms/2021/11/f5059a45d236626bd8ba7433c488bbe7.jpg" width=25%></center>
-        <h3> <a href="https://www.elderscrollsonline.com/en-us/home" target="_blank"> Elder Scrolls Online Main Site</a></h3>
-        <p> Similar to the other website, this website is where all Elder Scrolls Online news and updates are posted. I use this website to keep up to date with the news and also to research more about certain aspects of the game.</p>
-      <p style="text-align:center;"> <a href="#Site_Menu"> Back to Site Menu </a> </p>
+      <div id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+        </ul>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://images.contentstack.io/v3/assets/blte410e3b15535c144/blt043ffc6bca43bc2a/610c28d84df16d3d6de3cfb9/wq_1_fig_2_1080.jpg " width="1100" height="500">
+            <div class="carousel-caption">
+              <h3 style="color:white;"> <a href="https://www.bungie.net/" target="_blank" style="color:white;"> Bungie Main Site</a></h3>
+              <p style="color:white;"> This website is the main Bungie website where they post updates and news about their games. I visit this website almost weekly to see what they are adding and/or changing in Destiny 2.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://esosslfiles-a.akamaihd.net/cms/2021/11/f5059a45d236626bd8ba7433c488bbe7.jpg" alt="ESO" width="1100" height="500">
+            <div class="carousel-caption">
+              <h3 style="color:white;"> <a href="https://www.elderscrollsonline.com/en-us/home" target="_blank" style="color:white;"> Elder Scrolls Online Main Site</a></h3>
+              <p style="color:white;"> Similar to the other website, this website is where all Elder Scrolls Online news and updates are posted. I use this website to keep up to date with the news and also to research more about certain aspects of the game.</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
     </div>
+  </div>
 <br>
-    <div id=Projects>
-      <h1> &#128194 CUS1172 Projects &#128194 </h1>
-      <h3> Project 1- Milestone 1 </h3>
-      <p> This project involved me coding a personal web page using specified tags and including sections such as interests, menu, favorite websites, etc. </p>
-        <a href="https://nexodius-gen.github.io/html%20files/Project1-Styling1.html" > This is the link to the website. </a>
-      <h3> Project 1- Milestone 2 </h3>
-      <p> This project involved me coding a CSS file that would style my milestone 1 page with CSS tags so that I would be able to apply stying to all elements of certain types all at once. </p>
-        <a href="https://nexodius-gen.github.io/css%20files\styling1.css" > This is the link to the website. </a>
-      <h3> Project 1- Milestone 3 </h3>
-      <p> This project involved me coding with Bootstrap to organize my page structure so that it isn't just a long page of large boxes going down one by one. </p>
-        <a href="https://nexodius-gen.github.io/html%20files/Project1-Styling1.html" > This is the link to the website. </a>
-      <p style="text-align:center;"> <a href="#Site_Menu"> Back to Site Menu </a> </p>
-
-    </div>
+<div id=Projects class="container">
+  <h1> &#128194 CUS1172 Projects &#128194 </h1>
+  <h3> Project 1- Milestone 1 </h3>
+  <p> This project involved me coding a personal web page using specified tags and including sections such as interests, menu, favorite websites, etc.
+    <a href="https://nexodius-gen.github.io/html%20files/Project1-Styling1.html"; > This is the link to the website. </a></p>
+  <h3> Project 1- Milestone 2 </h3>
+  <p> This project involved me coding a CSS file that would style my milestone 1 page with CSS tags so that I would be able to apply stying to all elements of certain types all at once.
+    <a href="https://nexodius-gen.github.io/css%20files/styling1.css"; > This is the link to the website. </a></p>
+  <h3> Project 1- Milestone 3 </h3>
+  <p> This project involved me coding with Bootstrap to organize my page structure so that it isn't just a long page of large boxes going down one by one.
+    <a href="https://nexodius-gen.github.io/html%20files/Project1-Styling1.html";> This is the link to the website. </a></p>
+</div>
 <br>
-     <center> <span style="font-weight:bold"><form style="background-color:gold" action="mailto:mohammed.buksh19@my.stjohns.edu">
-       <p> Hello, visitor! If you have time please feel free to leave some feedback about the site here.</p>
+    <div class="container"> <center> <span style="font-weight:bold"><form style="background-color:gold" action="mailto:mohammed.buksh19@my.stjohns.edu">
+       <p style="padding-top:10px;"> Hello, visitor! If you have time please feel free to leave some feedback about the site here.</p>
         Name:<input type="text" name="username_field" placeholder="Name">
         Message:<input type="text" name="ContactComment" placeholder="Comment">
         <input type="submit" value="Submit">
-      </form> </center> </span>
+      </form> </center> </span> </div>
 <br>
   </body>
 </html>
