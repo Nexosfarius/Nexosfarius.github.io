@@ -1,0 +1,32 @@
+* {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  border-radius: 5px;
+  font-weight: bolder;
+}
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  text-decoration: underline;
+}
+form {
+  background-color: lightgrey;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-style: solid;
+}
+#list {
+  font-size: 16;
+}
+button {
+    border-radius: 100px;
+    text-align: right;
+}
+#listdiv {
+  background-color: lightgrey;
+  border-style: solid;
+  padding-top: 10px;
+}
+li {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
