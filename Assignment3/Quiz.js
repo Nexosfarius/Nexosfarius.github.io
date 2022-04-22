@@ -1,11 +1,10 @@
 let correct = 0;
 let total = 0;
 
-
 const appState = {
-    current_view : "#intro_view",
-    current_question : 0,
-    current_model : {}
+  current_view : "#intro_view",
+  current_question : 0,
+  current_model : {}
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -17,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
   update_view(appState);
 
   document.querySelector("#widget_view").onclick = (e) => {
-      handle_widget_event(e)
+    handle_widget_event(e)
   }
 });
 async function get_data_fetch_async(x) {
@@ -33,96 +32,96 @@ function handle_widget_event(e) {
   if (appState.current_view == "#intro_view"){
     if (e.target.dataset.action == "start_app") {
 
-        appState.current_question = 18
-        get_data_fetch_async(appState);
+      appState.current_question = 0
+      get_data_fetch_async(appState);
 
     }
   }
   if (appState.current_view == "#question_view_true_false") {
 
     if (e.target.dataset.action == "answer") {
-       isCorrect = check_user_response(e.target.dataset.answer, appState.current_model);
-       console.log("true false success");
-       updateQuestion(appState);
-       setQuestionView(appState);
-       update_view(appState);
-     }
-   }
-   // Handle answer event for  text questions.
-   if (appState.current_view == "#question_view_text_input") {
-       if (e.target.dataset.action == "submit") {
-
-           user_response = document.querySelector(`#${appState.current_model.answerFieldId}`).value;
-           isCorrect = check_user_response(e.target.dataset.answer, appState.current_model);
-           console.log("text input success");
-           updateQuestion(appState);
-           setQuestionView(appState);
-           update_view(appState);
-       }
+      isCorrect = check_user_response(e.target.dataset.answer, appState.current_model);
+      console.log("true false success");
+      updateQuestion(appState);
+      setQuestionView(appState);
+      update_view(appState);
     }
-    if (appState.current_view == "#question_view_multiple_choice") {
-      if (e.target.dataset.action == "answer2") {
-         // Controller - implement logic.
-         isCorrect = check_user_response(e.target.dataset.answer, appState.current_model);
-         console.log("multiple choice success");
-         updateQuestion(appState);
-         setQuestionView(appState);
-         update_view(appState);
-       }
-     }
-     if (appState.current_view == "#question_view_narrative_text_response") {
-       if (e.target.dataset.action == "answer3") {
-          // Controller - implement logic.
-          isCorrect = check_user_response(e.target.dataset.answer, appState.current_model);
-          console.log("narrative text response success");
-          updateQuestion(appState);
-          setQuestionView(appState);
-          update_view(appState);
-        }
+  }
+  // Handle answer event for  text questions.
+  if (appState.current_view == "#question_view_text_input") {
+    if (e.target.dataset.action == "submit") {
+
+      user_response = document.querySelector(`#${appState.current_model.answerFieldId}`).value;
+      isCorrect = check_user_response(e.target.dataset.answer, appState.current_model);
+      console.log("text input success");
+      updateQuestion(appState);
+      setQuestionView(appState);
+      update_view(appState);
+    }
+  }
+  if (appState.current_view == "#question_view_multiple_choice") {
+    if (e.target.dataset.action == "answer2") {
+      // Controller - implement logic.
+      isCorrect = check_user_response(e.target.dataset.answer, appState.current_model);
+      console.log("multiple choice success");
+      updateQuestion(appState);
+      setQuestionView(appState);
+      update_view(appState);
+    }
+  }
+  if (appState.current_view == "#question_view_narrative_text_response") {
+    if (e.target.dataset.action == "answer3") {
+      // Controller - implement logic.
+      isCorrect = check_user_response(e.target.dataset.answer, appState.current_model);
+      console.log("narrative text response success");
+      updateQuestion(appState);
+      setQuestionView(appState);
+      update_view(appState);
+    }
+  }
+  if (appState.current_view == "#question_view_image_selection") {
+    if (e.target.dataset.action == "submit2") {
+
+      isCorrect = check_user_response(e.target.dataset.answer, appState.current_model);
+      console.log("image selection success");
+      updateQuestion(appState);
+      setQuestionView(appState);
+      update_view(appState);
+    }
+  }
+
+  // Handle answer event for  text questions.
+  if (appState.current_view == "#end_view") {
+    if (e.target.dataset.action == "start_again") {
+      appState.current_view =  "#intro_view";
+      appState.current_model = {
+        action : "start_app"
       }
-      if (appState.current_view == "#question_view_image_selection") {
-          if (e.target.dataset.action == "submit2") {
+      update_view(appState);
 
-              isCorrect = check_user_response(e.target.dataset.answer, appState.current_model);
-              console.log("image selection success");
-              updateQuestion(appState);
-              setQuestionView(appState);
-              update_view(appState);
-          }
-       }
+    }
+  }
 
-    // Handle answer event for  text questions.
-    if (appState.current_view == "#end_view") {
-        if (e.target.dataset.action == "start_again") {
-          appState.current_view =  "#intro_view";
-          appState.current_model = {
-            action : "start_app"
-          }
-          update_view(appState);
-
-        }
-      }
-
- } // end of hadnle_widget_event
+} // end of hadnle_widget_event
 
 
 function check_user_response(user_answer, model) {
   if (user_answer == model.correctAnswer) {
-  return true;
+    return true;
   }
   return false;
 }
 
 
 function updateQuestion(appState) {
-    if (appState.current_question < 19) {
-      appState.current_question =   appState.current_question + 1;
-      get_data_fetch_async(appState);
-    }
-    else {
-      appState.current_question = -2;
-      appState.current_model = {};
-    }
+  if (appState.current_question < 19) {
+    appState.current_question =   appState.current_question + 1;
+    get_data_fetch_async(appState);
+  }
+  else {
+    appState.current_question = -2;
+    appState.current_model = {};
+  }
 }
 
 function setQuestionView(appState) {

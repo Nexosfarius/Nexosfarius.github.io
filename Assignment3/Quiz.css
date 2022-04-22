@@ -1,16 +1,22 @@
 #image_selection_button {
-    display: inline-block;
-    height: 134px;
-    padding: 0;
-    margin: 0;
-    vertical-align: top;
-    width: 104px;
+  display: inline-block;
+  height: 200px;
+  padding: 0;
+  margin: 30px;
+  vertical-align: top;
+  width: 200px;
 }
 img {
-    display: block;
-    height: 130px;
-    width: 100px;
+  height: 205px;
+  width: 205px;
+  margin: 0px;
 }
 #scoreboard {
   background-color: grey;
+}
+.btn-primary {
+  margin: 7px;
+}
+button {
+  margin:7px;
 }

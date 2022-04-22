@@ -14,8 +14,8 @@
   {
     "questionType" : "true_false",
     "questionText" : "The goal of AI is to create computer models that exhibit “intelligent behaviors” like humans.",
-    "correctAnswer" : "true",
-    "options" : ["true", "false"]
+    "correctAnswer" : "True",
+    "options" : ["True", "False"]
   },
   {
     "questionType" : "image_selection",
@@ -45,8 +45,8 @@
   {
     "questionType" : "true_false",
     "questionText" : "The first programmer was the son of a mad poet.",
-    "correctAnswer" : "false",
-    "options" : ["true", "false"]
+    "correctAnswer" : "False",
+    "options" : ["True", "False"]
   },
   {
     "questionType" : "image_selection",
@@ -76,8 +76,8 @@
   {
     "questionType" : "true_false",
     "questionText" : "The first computer used electricity.",
-    "correctAnswer" : "false",
-    "options" : ["true", "false"]
+    "correctAnswer" : "False",
+    "options" : ["True", "False"]
   },
   {
     "questionType" : "image_selection",
@@ -107,20 +107,20 @@
   {
     "questionType" : "true_false",
     "questionText" : "The first computer game ever made zero profit for it's creators.",
-    "correctAnswer" : "true",
-    "options" : ["true", "false"]
+    "correctAnswer" : "True",
+    "options" : ["True", "False"]
   },
   {
     "questionType" : "image_selection",
-    "questionText" : "Which picture shows python loop code?",
+    "questionText" : "What type of language is Java?",
     "correctAnswer" : "apple",
     "options" : ["true", "false", "apple"],
-    "link" : ["https://www.simplilearn.com/ice9/free_resources_article_thumb/c-for-loop.JPG","https://appdividend.com/wp-content/uploads/2019/07/Java-For-Loop-Example-For-Loop-in-Java-Tutorial.png","https://www.simplilearn.com/ice9/free_resources_article_thumb/basic-example.JPG"]
+    "link" : ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK4im9SMQs4wS6p7dcM4XjqNufZEoiPJ_82g&usqp=CAU","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQdA_2Vi350-blMARDU4bOdXkXaanfyYmPVg&usqp=CAU","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTpQt1MC_YS-F98Gdqboh827pVdUl13uOvBQ&usqp=CAU"]
   },
   {
     "questionType" : "text_input",
     "questionText" : "What type of hacker is the good kind? Black Hat or White Hat?",
     "correctAnswer" : "White Hat",
     "answerFieldId" : "answer_to_question"
-  }]
-}
+    }]
+  }
