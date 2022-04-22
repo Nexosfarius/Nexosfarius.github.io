@@ -1,6 +1,7 @@
 let correct = 0;
 let total = 0;
-
+let congrats = "Congrats, you passed!";
+let sorry = "Sorry but you failed.";
 const appState = {
   current_view : "#intro_view",
   current_question : 0,
@@ -20,9 +21,10 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 async function get_data_fetch_async(x) {
+  console.log(total);
+  console.log(correct);
   const response = await fetch("https://my-json-server.typicode.com/nexodius-gen/NeXoDiUs-GeN.github.io/questions");
   const data = await response.json();
-  console.log(appState.current_question);
   appState.current_model = data[x.current_question];
   setQuestionView(appState);
   update_view(appState);
@@ -37,10 +39,18 @@ function handle_widget_event(e) {
 
     }
   }
+  
   if (appState.current_view == "#question_view_true_false") {
 
     if (e.target.dataset.action == "answer") {
       isCorrect = check_user_response(e.target.dataset.answer, appState.current_model);
+      if (isCorrect == true) {
+        correct += 1;
+        total += 1;
+      }
+      else {
+        total += 1;
+      }
       console.log("true false success");
       updateQuestion(appState);
       setQuestionView(appState);
@@ -52,7 +62,14 @@ function handle_widget_event(e) {
     if (e.target.dataset.action == "submit") {
 
       user_response = document.querySelector(`#${appState.current_model.answerFieldId}`).value;
-      isCorrect = check_user_response(e.target.dataset.answer, appState.current_model);
+      isCorrect = check_user_response(user_response, appState.current_model);
+      if (isCorrect == true) {
+        correct += 1;
+        total += 1;
+      }
+      else {
+        total += 1;
+      }
       console.log("text input success");
       updateQuestion(appState);
       setQuestionView(appState);
@@ -63,6 +80,13 @@ function handle_widget_event(e) {
     if (e.target.dataset.action == "answer2") {
       // Controller - implement logic.
       isCorrect = check_user_response(e.target.dataset.answer, appState.current_model);
+      if (isCorrect == true) {
+        correct += 1;
+        total += 1;
+      }
+      else {
+        total += 1;
+      }
       console.log("multiple choice success");
       updateQuestion(appState);
       setQuestionView(appState);
@@ -73,6 +97,13 @@ function handle_widget_event(e) {
     if (e.target.dataset.action == "answer3") {
       // Controller - implement logic.
       isCorrect = check_user_response(e.target.dataset.answer, appState.current_model);
+      if (isCorrect == true) {
+        correct += 1;
+        total += 1;
+      }
+      else {
+        total += 1;
+      }
       console.log("narrative text response success");
       updateQuestion(appState);
       setQuestionView(appState);
@@ -83,6 +114,13 @@ function handle_widget_event(e) {
     if (e.target.dataset.action == "submit2") {
 
       isCorrect = check_user_response(e.target.dataset.answer, appState.current_model);
+      if (isCorrect == true) {
+        correct += 1;
+        total += 1;
+      }
+      else {
+        total += 1;
+      }
       console.log("image selection success");
       updateQuestion(appState);
       setQuestionView(appState);
@@ -90,20 +128,30 @@ function handle_widget_event(e) {
     }
   }
 
-  // Handle answer event for  text questions.
   if (appState.current_view == "#end_view") {
+    if ((correct/total) > .80) {
+      var message = document.getElementById('message');
+      message.innerHTML = congrats;
+      let score_message = `You scored a ${correct} out of ${total} which is equal to ${correct/total}.`
+      var message2 = document.getElementById('message2');
+      message2.innerHTML = score_message;
+    }
+    else {
+      var message = document.getElementById('message');
+      message.innerHTML = sorry;
+      let score_message = `You scored a ${correct} out of ${total} which is equal to ${correct/total}.`
+      var message2 = document.getElementById('message2');
+      message2.innerHTML = score_message;
+    }
     if (e.target.dataset.action == "start_again") {
       appState.current_view =  "#intro_view";
       appState.current_model = {
         action : "start_app"
       }
       update_view(appState);
-
     }
   }
-
-} // end of hadnle_widget_event
-
+}
 
 function check_user_response(user_answer, model) {
   if (user_answer == model.correctAnswer) {
@@ -114,6 +162,12 @@ function check_user_response(user_answer, model) {
 
 
 function updateQuestion(appState) {
+  var x = document.getElementById('correct_answers');
+  var y = document.getElementById('total_answers');
+  x.innerHTML = correct;
+  y.innerHTML = total;
+
+
   if (appState.current_question < 19) {
     appState.current_question =   appState.current_question + 1;
     get_data_fetch_async(appState);
@@ -152,7 +206,6 @@ function setQuestionView(appState) {
 }
 
 function update_view(appState) {
-
   const html_element = render_widget(appState.current_model, appState.current_view)
   document.querySelector("#widget_view").innerHTML = html_element;
 }
