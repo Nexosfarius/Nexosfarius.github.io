@@ -3,124 +3,144 @@
     "questionType" : "multiple_choice",
     "questionText" : "What is the most popular coding language of 2022?",
     "correctAnswer" : "Python",
-    "options" : ["Java", "Python", "JavaScript"]
+    "options" : ["Java", "Python", "JavaScript"],
+    "explanation" : "While it is pretty close at the top, Python is already used by 80% of programmers and that statistic is growing."
   },
   {
     "questionType" : "narrative_text_response",
     "questionText" : "Which of the below descriptions best describes machine learning?",
     "correctAnswer" : "Machine learning is a subfield of artificial intelligence, which is broadly defined as the capability of a machine to imitate intelligent human behavior.",
-    "options" : ["Machine learning is a programming language that is used along with python to create android games.", "Machine learning is a way for computer scientists to create robots.", "Machine learning is a subfield of artificial intelligence, which is broadly defined as the capability of a machine to imitate intelligent human behavior."]
+    "options" : ["Machine learning is a programming language that is used along with python to create android games.", "Machine learning is a way for computer scientists to create robots.", "Machine learning is a subfield of artificial intelligence, which is broadly defined as the capability of a machine to imitate intelligent human behavior."],
+    "explanation" : ""
   },
   {
     "questionType" : "true_false",
     "questionText" : "The goal of AI is to create computer models that exhibit “intelligent behaviors” like humans.",
     "correctAnswer" : "True",
-    "options" : ["True", "False"]
+    "options" : ["True", "False"],
+    "explanation" : ""
   },
   {
     "questionType" : "image_selection",
     "questionText" : "Which logo is similar to the python logo?",
     "correctAnswer" : "apple",
     "options" : ["true", "apple", "pear"],
-    "link" : ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1WZfKG76HXAyO8DJmGOJo6bj_bSsy7VPoVQ&usqp=CAU","https://i.pinimg.com/originals/8f/ad/12/8fad125b8f6082bdb7deb0aa593dfb49.jpg","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD8bMq2U-B3wuUSZjZmmrR7FBsxLIt-Syegw&usqp=CAU"]
+    "link" : ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1WZfKG76HXAyO8DJmGOJo6bj_bSsy7VPoVQ&usqp=CAU","https://i.pinimg.com/originals/8f/ad/12/8fad125b8f6082bdb7deb0aa593dfb49.jpg","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD8bMq2U-B3wuUSZjZmmrR7FBsxLIt-Syegw&usqp=CAU"],
+    "explanation" : ""
   },
   {
     "questionType" : "text_input",
     "questionText" : "What coding language is C++ based on and an extension of?",
     "correctAnswer" : "C",
-    "answerFieldId" : "answer_to_question"
+    "answerFieldId" : "answer_to_question",
+    "explanation" : ""
   },
   {
     "questionType" : "multiple_choice",
     "questionText" : "How many coding languages are there?",
     "correctAnswer" : "More than 700.",
-    "options" : ["More than 700.", "Between 300 and 700.", "Less than 300."]
+    "options" : ["More than 700.", "Between 300 and 700.", "Less than 300."],
+    "explanation" : ""
   },
   {
     "questionType" : "narrative_text_response",
     "questionText" : "Where did the term coding bugs come from?",
     "correctAnswer" : "There was a Harvard student who found out that the thing causing his computer to malfunction was a moth in the relay.",
-    "options" : ["There was a professor in MIT who thought of the term when a fly kept bothering him while he was fixing code errors.", "There was a Harvard student who found out that the thing causing his computer to malfunction was a moth in the relay.", "Neither of these is the correct reason why."]
+    "options" : ["There was a professor in MIT who thought of the term when a fly kept bothering him while he was fixing code errors.", "There was a Harvard student who found out that the thing causing his computer to malfunction was a moth in the relay.", "Neither of these is the correct reason why."],
+    "explanation" : ""
   },
   {
     "questionType" : "true_false",
     "questionText" : "The first programmer was the son of a mad poet.",
     "correctAnswer" : "False",
-    "options" : ["True", "False"]
+    "options" : ["True", "False"],
+    "explanation" : ""
   },
   {
     "questionType" : "image_selection",
     "questionText" : "Which acronym represents artificial intelligence?",
     "correctAnswer" : "false",
     "options" : ["true", "false", "apple"],
-    "link" : ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM2JiRHOn91BqpPpJNFkldvo4afrbPehmPGw&usqp=CAU","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCc8Oka5KG7mzlkpeRZE8nVR_KjK4_mMg0NQ&usqp=CAU","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWAKzUkmewB7ktfvHR8BnrvBQVPgbX50a0-w&usqp=CAU"]
+    "link" : ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM2JiRHOn91BqpPpJNFkldvo4afrbPehmPGw&usqp=CAU","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCc8Oka5KG7mzlkpeRZE8nVR_KjK4_mMg0NQ&usqp=CAU","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWAKzUkmewB7ktfvHR8BnrvBQVPgbX50a0-w&usqp=CAU"],
+    "explanation" : ""
   },
   {
     "questionType" : "text_input",
     "questionText" : "What is the word that describes code based on either zeroes or ones. ",
     "correctAnswer" : "Binary",
-    "answerFieldId" : "answer_to_question"
+    "answerFieldId" : "answer_to_question",
+    "explanation" : ""
   },
   {
     "questionType" : "multiple_choice",
     "questionText" : "What is the name of the language that was named after a famous French mathematician?",
     "correctAnswer" : "Pascal",
-    "options" : ["Pascal", "Gauss", "Euler"]
+    "options" : ["Pascal", "Gauss", "Euler"],
+    "explanation" : ""
   },
   {
     "questionType" : "narrative_text_response",
     "questionText" : "Neural networks, also known as artificial neural networks (ANNs) or simulated neural networks (SNNs), are a subset of machine learning and are at the heart of deep learning algorithms. What part of the human body are they named after?",
     "correctAnswer" : "The Human Brain",
-    "options" : ["The Human Lungs", "The Human Brain", "The Computer Database Systems"]
+    "options" : ["The Human Lungs", "The Human Brain", "The Computer Database Systems"],
+    "explanation" : ""
   },
   {
     "questionType" : "true_false",
     "questionText" : "The first computer used electricity.",
     "correctAnswer" : "False",
-    "options" : ["True", "False"]
+    "options" : ["True", "False"],
+    "explanation" : ""
   },
   {
     "questionType" : "image_selection",
     "questionText" : "What logo is closest to representing the Atom editor?",
     "correctAnswer" : "true",
     "options" : ["true", "false", "apple"],
-    "link" : ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvKdEQYvhFo007QfPDr6S4eo8QvVXYT-GJBg&usqp=CAU","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5b1jZ1Z_fBOpF_BZOPsi5SSg-K7cvjthgqg&usqp=CAU","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ72LBOvKb7AeLlgbkWQYap-0gB-p0kH-RCgQ&usqp=CAU"]
+    "link" : ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvKdEQYvhFo007QfPDr6S4eo8QvVXYT-GJBg&usqp=CAU","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5b1jZ1Z_fBOpF_BZOPsi5SSg-K7cvjthgqg&usqp=CAU","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ72LBOvKb7AeLlgbkWQYap-0gB-p0kH-RCgQ&usqp=CAU"],
+    "explanation" : ""
   },
   {
     "questionType" : "text_input",
     "questionText" : "How old was the youngest coder ever?",
     "correctAnswer" : "6",
-    "answerFieldId" : "answer_to_question"
+    "answerFieldId" : "answer_to_question",
+    "explanation" : ""
   },
   {
     "questionType" : "multiple_choice",
     "questionText" : "Where was the first virus created?",
     "correctAnswer" : "Pakistan",
-    "options" : ["America", "Pakistan", "India"]
+    "options" : ["America", "Pakistan", "India"],
+    "explanation" : ""
   },
   {
     "questionType" : "narrative_text_response",
     "questionText" : "There was a famous mathmetician named Alexander Turing who cracked the cipher the Nazis used in WW2. What was the cipher machine called?",
     "correctAnswer" : "The enigma machine.",
-    "options" : ["The enigma machine.", "The crypto machine.", "The randomizer machine."]
+    "options" : ["The enigma machine.", "The crypto machine.", "The randomizer machine."],
+    "explanation" : ""
   },
   {
     "questionType" : "true_false",
     "questionText" : "The first computer game ever made zero profit for it's creators.",
     "correctAnswer" : "True",
-    "options" : ["True", "False"]
+    "options" : ["True", "False"],
+    "explanation" : ""
   },
   {
     "questionType" : "image_selection",
     "questionText" : "What type of language is Java?",
     "correctAnswer" : "apple",
     "options" : ["true", "false", "apple"],
-    "link" : ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK4im9SMQs4wS6p7dcM4XjqNufZEoiPJ_82g&usqp=CAU","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQdA_2Vi350-blMARDU4bOdXkXaanfyYmPVg&usqp=CAU","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTpQt1MC_YS-F98Gdqboh827pVdUl13uOvBQ&usqp=CAU"]
+    "link" : ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK4im9SMQs4wS6p7dcM4XjqNufZEoiPJ_82g&usqp=CAU","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQdA_2Vi350-blMARDU4bOdXkXaanfyYmPVg&usqp=CAU","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTpQt1MC_YS-F98Gdqboh827pVdUl13uOvBQ&usqp=CAU"],
+    "explanation" : ""
   },
   {
     "questionType" : "text_input",
     "questionText" : "What type of hacker is the good kind? Black Hat or White Hat?",
     "correctAnswer" : "White Hat",
-    "answerFieldId" : "answer_to_question"
+    "answerFieldId" : "answer_to_question",
+    "explanation" : ""
     }]
   }

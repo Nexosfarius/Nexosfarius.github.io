@@ -51,11 +51,11 @@
             <div class="col">
               <div>
                 <span> What is your name?</span><br>
-                <form id="name">
-                  <input type="text" id="myInput" autofocus autocomplete="off" placeholder="Name">  </form>
-                <button id="submit" form = "name" type="submit" value="Submit">
-                <button id = 'quiz1' class="btn btn-danger" data-action="{{this.action}}">START QUIZ 1</button>
-                <button id = 'quiz2' class="btn btn-danger" data-action="{{this.action}}">START QUIZ 2</button>
+                <form id="inputdata">
+                  <input type="text" id="myInput" autofocus autocomplete="off">
+                  <input id="submit" type="submit" value="Submit">  </form>
+                <button id = 'quiz1' class="btn btn-danger" data-action="start_1">START QUIZ 1</button>
+                <button id = 'quiz2' class="btn btn-danger" data-action="start_2">START QUIZ 2</button>
               </div>
             </div>
           </div>
@@ -63,6 +63,19 @@
       </script>
 
       <script id="intro_view" type="text/x-handlebars-template">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div>
+                <span> Press start to begin the app</span><br>
+                <button  id = 'timer' class="btn btn-danger" data-action="{{this.action}}">START</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </script>
+
+      <script id="intro_view2" type="text/x-handlebars-template">
         <div class="container">
           <div class="row">
             <div class="col">
