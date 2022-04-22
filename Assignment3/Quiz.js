@@ -2,11 +2,32 @@ let correct = 0;
 let total = 0;
 let congrats = "Congrats, you passed!";
 let sorry = "Sorry but you failed.";
+let hours = 0;
+let minutes = 0;
+let seconds = 0;
 const appState = {
   current_view : "#intro_view",
   current_question : 0,
   current_model : {}
 }
+document.getElementById("timer").addEventListener("click", function(){
+
+  var Timer = setInterval(function function1(){
+    document.getElementById("seconds").innerHTML = seconds++;
+    if (seconds =60) {
+      seconds = 0;
+      minutes++;
+      document.getElementById("minutes").innerHTML = minutes;
+    }
+    if (minutes = 60) {
+      minutes = 0;
+      hours++;
+      document.getElementById("hours").innerHTML = hours;
+    }
+  }, 1000);
+
+  console.log(countdown);
+});
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -39,7 +60,7 @@ function handle_widget_event(e) {
 
     }
   }
-  
+
   if (appState.current_view == "#question_view_true_false") {
 
     if (e.target.dataset.action == "answer") {
