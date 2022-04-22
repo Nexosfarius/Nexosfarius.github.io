@@ -1,39 +1,10 @@
-const questions = [
-  {
-    questionType : "multiple_choice",
-    questionText : "What is the value of the expression 1+1?",
-    correctAnswer : "2",
-    options : ["1", "23", "2"],
-  },
-  {
-    questionType : "narrative_text_response",
-    questionText : "What common fruit is usually depicted as red?",
-    correctAnswer : "apple is correct",
-    options : ["banana is correct", "pear is correct", "apple is correct"],
-  },
-  {
-    questionType : "true_false",
-    questionText : "The earth is round",
-    correctAnswer : "true",
-    options : ["true", "false"],
-  },
-  {
-    questionType : "image_selection",
-    questionText : "What is the value of the expression 1+1",
-    correctAnswer : "apple",
-    options : ["true", "false", "apple"],
-  },
-  {
-    questionType : "text_input",
-    questionText : "What is the value of the expression 1+1",
-    correctAnswer : "2",
-    answerFieldId : "answer_to_question"
-  }
-]
+let correct = 0;
+let total = 0;
+
 
 const appState = {
     current_view : "#intro_view",
-    current_question : -1,
+    current_question : 0,
     current_model : {}
 }
 
@@ -49,25 +20,27 @@ document.addEventListener('DOMContentLoaded', () => {
       handle_widget_event(e)
   }
 });
-
+async function get_data_fetch_async(x) {
+  const response = await fetch("https://my-json-server.typicode.com/nexodius-gen/NeXoDiUs-GeN.github.io/questions");
+  const data = await response.json();
+  console.log(appState.current_question);
+  appState.current_model = data[x.current_question];
+  setQuestionView(appState);
+  update_view(appState);
+}
 function handle_widget_event(e) {
 
   if (appState.current_view == "#intro_view"){
     if (e.target.dataset.action == "start_app") {
 
-        // Update State (current model + state variables)
-        appState.current_question = 0
-        appState.current_model = questions[appState.current_question];
-        // process the appState, based on question type update appState.current_view
-        setQuestionView(appState);
+        appState.current_question = 18
+        get_data_fetch_async(appState);
 
-        update_view(appState);
     }
   }
   if (appState.current_view == "#question_view_true_false") {
 
     if (e.target.dataset.action == "answer") {
-       // Controller - implement logic.
        isCorrect = check_user_response(e.target.dataset.answer, appState.current_model);
        console.log("true false success");
        updateQuestion(appState);
@@ -135,25 +108,16 @@ function handle_widget_event(e) {
 
 function check_user_response(user_answer, model) {
   if (user_answer == model.correctAnswer) {
-    return true;
+  return true;
   }
   return false;
 }
 
+
 function updateQuestion(appState) {
-    if (appState.current_question < questions.length-1) {
+    if (appState.current_question < 19) {
       appState.current_question =   appState.current_question + 1;
-      appState.current_model = questions[appState.current_question];
-    }
-    else {
-      appState.current_question = -2;
-      appState.current_model = {};
-    }
-}
-function updateQuestion2(appState) {
-    if (appState.current_question < questions.length-1) {
-      appState.current_question =   appState.current_question + 2;
-      appState.current_model = questions[appState.current_question];
+      get_data_fetch_async(appState);
     }
     else {
       appState.current_question = -2;
@@ -162,23 +126,29 @@ function updateQuestion2(appState) {
 }
 
 function setQuestionView(appState) {
+
   if (appState.current_question == -2) {
     appState.current_view  = "#end_view";
     return
   }
-  if (appState.current_model.questionType == "true_false")
+  else if (appState.current_model.questionType == "true_false") {
     appState.current_view = "#question_view_true_false";
+  }
   else if (appState.current_model.questionType == "text_input") {
     appState.current_view = "#question_view_text_input";
+
   }
   else if (appState.current_model.questionType == "multiple_choice") {
     appState.current_view = "#question_view_multiple_choice";
+
   }
   else if (appState.current_model.questionType == "narrative_text_response") {
     appState.current_view = "#question_view_narrative_text_response";
+
   }
   else if (appState.current_model.questionType == "image_selection") {
     appState.current_view = "#question_view_image_selection";
+
   }
 }
 
