@@ -4,25 +4,25 @@
     "questionType" : "multiple_choice",
     "questionText" : "What is the value of the expression 1+1?",
     "correctAnswer" : "2",
-    "options" : ["1", "23", "2"],
+    "options" : ["1", "23", "2"]
   },
   {
     "questionType" : "narrative_text_response",
     "questionText" : "What common fruit is usually depicted as red?",
     "correctAnswer" : "apple is correct",
-    "options" : ["banana is correct", "pear is correct", "apple is correct"],
+    "options" : ["banana is correct", "pear is correct", "apple is correct"]
   },
   {
     "questionType" : "true_false",
     "questionText" : "The earth is round",
     "correctAnswer" : "true",
-    "options" : ["true", "false"],
+    "options" : ["true", "false"]
   },
   {
     "questionType" : "image_selection",
     "questionText" : "What is the value of the expression 1+1",
     "correctAnswer" : "apple",
-    "options" : ["true", "false", "apple"],
+    "options" : ["true", "false", "apple"]
   },
   {
     "questionType" : "text_input",
