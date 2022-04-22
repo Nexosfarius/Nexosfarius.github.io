@@ -19,10 +19,10 @@
   },
   {
     "questionType" : "image_selection",
-    "questionText" : "Which logo is the python logo?",
+    "questionText" : "Which logo is similar to the python logo?",
     "correctAnswer" : "apple",
     "options" : ["true", "apple", "pear"],
-    "link" : ["","",""]
+    "link" : ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1WZfKG76HXAyO8DJmGOJo6bj_bSsy7VPoVQ&usqp=CAU","https://i.pinimg.com/originals/8f/ad/12/8fad125b8f6082bdb7deb0aa593dfb49.jpg","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD8bMq2U-B3wuUSZjZmmrR7FBsxLIt-Syegw&usqp=CAU"]
   },
   {
     "questionType" : "text_input",
@@ -50,10 +50,10 @@
   },
   {
     "questionType" : "image_selection",
-    "questionText" : "Which logo is most likely to represent artificial intelligence?",
+    "questionText" : "Which acronym represents artificial intelligence?",
     "correctAnswer" : "false",
     "options" : ["true", "false", "apple"],
-    "link" : ["","",""]
+    "link" : ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM2JiRHOn91BqpPpJNFkldvo4afrbPehmPGw&usqp=CAU","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCc8Oka5KG7mzlkpeRZE8nVR_KjK4_mMg0NQ&usqp=CAU","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWAKzUkmewB7ktfvHR8BnrvBQVPgbX50a0-w&usqp=CAU"]
   },
   {
     "questionType" : "text_input",
@@ -81,10 +81,10 @@
   },
   {
     "questionType" : "image_selection",
-    "questionText" : "What logo represents the Atom editor?",
+    "questionText" : "What logo is closest to representing the Atom editor?",
     "correctAnswer" : "true",
     "options" : ["true", "false", "apple"],
-    "link" : ["","",""]
+    "link" : ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvKdEQYvhFo007QfPDr6S4eo8QvVXYT-GJBg&usqp=CAU","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5b1jZ1Z_fBOpF_BZOPsi5SSg-K7cvjthgqg&usqp=CAU","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ72LBOvKb7AeLlgbkWQYap-0gB-p0kH-RCgQ&usqp=CAU"]
   },
   {
     "questionType" : "text_input",
