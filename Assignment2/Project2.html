@@ -16,32 +16,32 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <h1> To-Do List </h1>
-<div class="container">
-  <div class="row">
-    <div class="col-md-5" id="formData">  <br><br><br> <form id="inputdata">
-    <p> What is your task? </p>
-    <input type="text" id="myInput" autofocus autocomplete="off" placeholder="Task-Description">
-    <br> <br>
-    <label for="priority">How important is it?:</label> <br>
-    <select name="priority" id="priority">
-    <option value="high">High-Priority</option>
-    <option value="medium">Medium-Priority</option>
-    <option value="low">Low-Priority</option>
-    </select> <br> <br>
-    <p> What is the task's status? </p>
-    <input type="radio" id="complete"  name="radioOption" value="complete">
-    <label for="complete">Complete</label>
-    <input type="radio" id="pending"  name="radioOption" value="pending">
-    <label for="pending">Pending</label>
-    <br><br>
-    <input id="submit" type="submit" value="Add Task to List">
-  </form>
-</div>
-<div class="col-md-2">
-</div>
-  <div class="col-md-5" id="listdiv">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5" id="formData">  <br><br><br> <form id="inputdata">
+        <p> What is your task? </p>
+        <input type="text" id="myInput" autofocus autocomplete="off" placeholder="Task-Description">
+        <br> <br>
+        <label for="priority">How important is it?:</label> <br>
+        <select name="priority" id="priority">
+          <option value="high">High-Priority</option>
+          <option value="medium">Medium-Priority</option>
+          <option value="low">Low-Priority</option>
+        </select> <br> <br>
+        <p> What is the task's status? </p>
+        <input type="radio" id="complete"  name="radioOption" value="complete">
+        <label for="complete">Complete</label>
+        <input type="radio" id="pending"  name="radioOption" value="pending">
+        <label for="pending">Pending</label>
+        <br><br>
+        <input id="submit" type="submit" value="Add Task to List">
+      </form>
+    </div>
+    <div class="col-md-2">
+    </div>
+    <div class="col-md-5" id="listdiv">
       <br><h2 style="text-decoration:underline;"> Current To Do List <h2>
-      <ul id="list"></ul>
+        <ul id="list"></ul>
       </div>
     </div>
   </div>

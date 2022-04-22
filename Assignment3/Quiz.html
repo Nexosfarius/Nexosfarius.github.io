@@ -11,8 +11,8 @@
   <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
 
   <!-- Script for our application  -->
-  <link rel="stylesheet" href="https://nexodius-gen.github.io/Assignment3/Quiz.css">
-  <script src="https://nexodius-gen.github.io/Assignment3/Quiz.js"> </script>
+  <link rel="stylesheet" href="C:\Users\Tahir Buksh\NeXoDiUs-GeN.github.io\Assignment3\Quiz.css">
+  <script src="C:\Users\Tahir Buksh\NeXoDiUs-GeN.github.io\Assignment3\Quiz.js"> </script>
 
 </head>
 <body>
@@ -25,29 +25,50 @@
     <div id="widget_view" class="col-md-6" style="margin:50px; text-align: center;">
     </div>
     <div id="scoreboard" class="col-md-3 float-right" style="margin:50px; text-align: center;">
+      <br>
       <h2 style="text-decoration: underline;"> ScoreBoard </h2>
       <h3> Correct</h3>
       <h2 id="correct_answers"> 0 <h2>
         <h3> Total</h3>
         <h1 id="total_answers"> 0 <h1>
           <h2 style="text-decoration: underline;"> Timer </h2>
-          <table>
+          <center><table style="font-size: 26px;">
             <tr>
               <th id = 'hours'>0</th>
+              <th> hours : </th>
               <th id = 'minutes'>0</th>
+              <th> mins : </th>
               <th id = 'seconds'>0</th>
-            </tr>
+              <th> secs</th>
+            </tr></table></center><br>
           </div>
         </div>
       </body>
+
+      <script id="chooseQuiz" type="text/x-handlebars-template">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div>
+                <span> What is your name?</span><br>
+                <form id="name">
+                  <input type="text" id="myInput" autofocus autocomplete="off" placeholder="Name">  </form>
+                <button id="submit" form = "name" type="submit" value="Submit">
+                <button id = 'quiz1' class="btn btn-danger" data-action="{{this.action}}">START QUIZ 1</button>
+                <button id = 'quiz2' class="btn btn-danger" data-action="{{this.action}}">START QUIZ 2</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </script>
 
       <script id="intro_view" type="text/x-handlebars-template">
         <div class="container">
           <div class="row">
             <div class="col">
-              <div id = 'timer'>
+              <div>
                 <span> Press start to begin the app</span><br>
-                <button  class="btn btn-danger" data-action="{{this.action}}">START</button>
+                <button  id = 'timer' class="btn btn-danger" data-action="{{this.action}}">START</button>
               </div>
             </div>
           </div>

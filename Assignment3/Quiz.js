@@ -1,37 +1,37 @@
-let correct = 0;
-let total = 0;
 let congrats = "Congrats, you passed!";
 let sorry = "Sorry but you failed.";
-let hours = 0;
-let minutes = 0;
-let seconds = 0;
+let correct = 0;
+let total = 0;
+let name1 = "";
 const appState = {
   current_view : "#intro_view",
   current_question : 0,
   current_model : {}
 }
-document.getElementById("timer").addEventListener("click", function(){
-
-  var Timer = setInterval(function function1(){
-    document.getElementById("seconds").innerHTML = seconds++;
-    if (seconds =60) {
+function timer(x){
+  let hours = 0;
+  let minutes = 0;
+  let seconds = 0;
+  window.interval = window.setInterval(function function1(){
+    document.getElementById("seconds").innerHTML = seconds;
+    if (seconds == 60) {
       seconds = 0;
       minutes++;
       document.getElementById("minutes").innerHTML = minutes;
     }
-    if (minutes = 60) {
+    if (minutes == 60) {
       minutes = 0;
       hours++;
       document.getElementById("hours").innerHTML = hours;
     }
+    seconds++;
   }, 1000);
 
-  console.log(countdown);
-});
+};
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  appState.current_view =  "#intro_view";
+  appState.current_view =  "#chooseQuiz";
   appState.current_model = {
     action : "start_app"
   }
@@ -41,6 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
     handle_widget_event(e)
   }
 });
+
 async function get_data_fetch_async(x) {
   console.log(total);
   console.log(correct);
@@ -51,11 +52,35 @@ async function get_data_fetch_async(x) {
   update_view(appState);
 }
 function handle_widget_event(e) {
+  if (appState.current_view == "#chooseQuiz") {
 
+
+  }
   if (appState.current_view == "#intro_view"){
     if (e.target.dataset.action == "start_app") {
-
+      timer(appState);
+      correct = correct*0;
+      total = total*0;
+      var x = document.getElementById('correct_answers');
+      var y = document.getElementById('total_answers');
+      x.innerHTML = correct;
+      y.innerHTML = total;
       appState.current_question = 0
+      get_data_fetch_async(appState);
+
+    }
+  }
+
+  if (appState.current_view == "#intro_view2"){
+    if (e.target.dataset.action == "start_app") {
+      timer(appState);
+      correct = correct*0;
+      total = total*0;
+      var x = document.getElementById('correct_answers');
+      var y = document.getElementById('total_answers');
+      x.innerHTML = correct;
+      y.innerHTML = total;
+      appState.current_question = 10
       get_data_fetch_async(appState);
 
     }
@@ -150,17 +175,18 @@ function handle_widget_event(e) {
   }
 
   if (appState.current_view == "#end_view") {
+    window.clearInterval(interval);
     if ((correct/total) > .80) {
       var message = document.getElementById('message');
       message.innerHTML = congrats;
-      let score_message = `You scored a ${correct} out of ${total} which is equal to ${correct/total}.`
+      let score_message = `You scored a ${correct} out of ${total} which is equal to ${(correct*100)/total}%.`
       var message2 = document.getElementById('message2');
       message2.innerHTML = score_message;
     }
     else {
       var message = document.getElementById('message');
       message.innerHTML = sorry;
-      let score_message = `You scored a ${correct} out of ${total} which is equal to ${correct/total}.`
+      let score_message = `You scored a ${correct} out of ${total} which is equal to ${(correct*100)/total}%.`
       var message2 = document.getElementById('message2');
       message2.innerHTML = score_message;
     }
