@@ -45,8 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   update_view(appState);
 
-  setTimeout(myArray.myMethod, 1.5*1000, '1'); // prints "undefined" after 1.5 seconds
-
   document.querySelector("#widget_view").onclick = (e) => {
       handle_widget_event(e)
   }
@@ -66,8 +64,6 @@ function handle_widget_event(e) {
         update_view(appState);
     }
   }
-
-  // Handle the answer event.
   if (appState.current_view == "#question_view_true_false") {
 
     if (e.target.dataset.action == "answer") {
@@ -147,6 +143,16 @@ function check_user_response(user_answer, model) {
 function updateQuestion(appState) {
     if (appState.current_question < questions.length-1) {
       appState.current_question =   appState.current_question + 1;
+      appState.current_model = questions[appState.current_question];
+    }
+    else {
+      appState.current_question = -2;
+      appState.current_model = {};
+    }
+}
+function updateQuestion2(appState) {
+    if (appState.current_question < questions.length-1) {
+      appState.current_question =   appState.current_question + 2;
       appState.current_model = questions[appState.current_question];
     }
     else {
