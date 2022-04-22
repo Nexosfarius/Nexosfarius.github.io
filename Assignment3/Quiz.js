@@ -1,6 +1,12 @@
 let correct = 0;
 let total = 0;
-let name1;
+function myFunction() {
+let name1 = prompt("Please enter your name");
+  return name1;
+}
+let name1 =  myFunction();
+console.log(name1);
+
 let congrats = `Congrats ${name1}, you passed!`;
 let sorry = `Sorry ${name1} but you failed.`;
 const appState = {
@@ -29,25 +35,13 @@ function timer(x){
 
 };
 document.addEventListener('DOMContentLoaded', () => {
-   let name1 = myFunction();
   update_view(appState);
-  console.log("name1");
-
-
-  document.querySelector("#inputdata").onsubmit = function() {
-    name1 = document.querySelector('#myInput').value;
-    console.log(name1);
-    return false;
-  }
   document.querySelector("#widget_view").onclick = (e) => {
     handle_widget_event(e)
     console.log(1);
   }
 });
-function myFunction() {
-  let name1 = prompt("Please enter your name");
-  return name1;
-}
+
 
 
 async function get_data_fetch_async(x) {
@@ -213,7 +207,7 @@ if (appState.current_view == "#end_view") {
     message2.innerHTML = score_message;
   }
   if (e.target.dataset.action == "start_again") {
-    appState.current_view =  "#intro_view";
+    appState.current_view =  "#chooseQuiz";
     appState.current_model = {
       action : "start_app"
     }

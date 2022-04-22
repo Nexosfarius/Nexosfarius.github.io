@@ -16,7 +16,7 @@
 
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
       <a class="navbar-brand" href="#">Custom Comp Sci Quizzes</a>
     </div>
@@ -49,11 +49,8 @@
         <div class="container">
           <div class="row">
             <div class="col">
-              <div>
-                <span> What is your name?</span><br>
-                <form id="inputdata">
-                  <input type="text" id="myInput" autofocus autocomplete="off">
-                  <input id="submit" type="submit" value="Submit">  </form>
+              <div><br><br><br><br><br><br>
+                <span style="font-weight: bold; font-size: 26px;"> What quiz would you like to take?</span><br>
                 <button id = 'quiz1' class="btn btn-danger" data-action="start_1">START QUIZ 1</button>
                 <button id = 'quiz2' class="btn btn-danger" data-action="start_2">START QUIZ 2</button>
               </div>
@@ -66,8 +63,8 @@
         <div class="container">
           <div class="row">
             <div class="col">
-              <div>
-                <span> Press start to begin the app</span><br>
+              <div><br><br><br><br><br><br>
+                <span style="font-weight: bold; font-size: 26px;"> Press start to begin the app</span><br>
                 <button  id = 'timer' class="btn btn-danger" data-action="{{this.action}}">START</button>
               </div>
             </div>
@@ -79,8 +76,8 @@
         <div class="container">
           <div class="row">
             <div class="col">
-              <div>
-                <span> Press start to begin the app</span><br>
+              <div><br><br>
+                <span style="font-weight: bold; font-size: 26px;"> Press start to begin the app</span><br>
                 <button  id = 'timer' class="btn btn-danger" data-action="{{this.action}}">START</button>
               </div>
             </div>
@@ -92,8 +89,8 @@
         <div class="container">
           <div class="row">
             <div class="col">
-              <div>
-                <span style="text-align:center"> {{this.questionText}}</span><br>
+              <div><br><br>
+                <span style="font-weight: bold; font-size: 26px;text-align:center"> {{this.questionText}}</span><br>
                 <button class="btn btn-primary" data-action="answer" data-answer="{{this.options.[0]}}">{{this.options.[0]}}</button>
                 <button class="btn btn-danger" data-action="answer" data-answer="{{this.options.[1]}}">{{this.options.[1]}}</button>
               </div>
@@ -106,8 +103,8 @@
         <div class="container">
           <div class="row">
             <div class="col">
-              <div>
-                <span style="text-align:center"> {{this.questionText}} </span>
+              <div><br><br>
+                <span style="text-align:center;font-weight: bold; font-size: 26px;"> {{this.questionText}} </span>
                 <input style="margin: 5px;" type="text" id="{{this.answerFieldId}}" name="answer"><br>
                 <button class="btn btn-danger" data-action="submit">Submit</button>
               </div>
@@ -120,8 +117,8 @@
         <div class="container">
           <div class="row">
             <div class="col">
-              <div>
-                <span style="text-align:center"> {{this.questionText}}</span><br>
+              <div><br><br>
+                <span style="font-weight: bold; font-size: 26px;text-align:center"> {{this.questionText}}</span><br>
                 <button class="btn btn-primary" data-action="answer2" data-answer="{{this.options.[0]}}">{{this.options.[0]}}</button><br>
                 <button class="btn btn-primary" data-action="answer2" data-answer="{{this.options.[1]}}">{{this.options.[1]}}</button><br>
                 <button class="btn btn-primary" data-action="answer2" data-answer="{{this.options.[2]}}">{{this.options.[2]}}</button>
@@ -135,8 +132,8 @@
         <div class="container">
           <div class="row">
             <div class="col">
-              <div>
-                <span style="text-align:center"> {{this.questionText}}</span><br>
+              <div><br><br>
+                <span style="font-weight: bold; font-size: 26px;text-align:center"> {{this.questionText}}</span><br>
                 <button class="btn btn-primary" data-action="answer3" data-answer="{{this.options.[0]}}">{{this.options.[0]}}</button><br>
                 <button class="btn btn-primary" data-action="answer3" data-answer="{{this.options.[1]}}">{{this.options.[1]}}</button><br>
                 <button class="btn btn-primary" data-action="answer3" data-answer="{{this.options.[2]}}">{{this.options.[2]}}</button>
@@ -149,12 +146,12 @@
       <script id="question_view_image_selection" type="text/x-handlebars-template">
         <div class="container">
           <div class="col-md-9">
-            <div>
-              <span style="text-align:center"> {{this.questionText}} <br>Please select an option and click enter to move on.</span><br>
+            <div><br><br>
+              <center><span style="font-weight: bold; font-size: 26px;text-align:center"> {{this.questionText}} <br>Please select an option and click enter to move on.</span><br>
               <button id = "image_selection_button" data-action="submit2" data-answer="{{this.options.[0]}}"><img src="{{this.link.[0]}}"></button>
               <button id = "image_selection_button" data-action="submit2" data-answer="{{this.options.[1]}}"><img src="{{this.link.[1]}}"></button>
               <button id = "image_selection_button" data-action="submit2" data-answer="{{this.options.[2]}}"><img src="{{this.link.[2]}}"></button>
-            </div>
+          </center>  </div>
           </div>
         </div>
       </script>
@@ -163,8 +160,8 @@
         <div class="container">
           <div class="row">
             <div class="col">
-              <div>
-                <span id="feedback_string">Correct | Incorrect </span><br>
+              <div><br><br>
+                <span id="feedback_string" style="font-weight: bold; font-size: 26px;">Correct | Incorrect </span><br>
                 <button class="btn btn-danger" data-action="ok"> OK</button>
               </div>
             </div>
@@ -176,8 +173,8 @@
         <div class="container">
           <div class="row">
             <div class="col">
-              <div>
-                <span id="feedback_string">Correct | Incorrect </span><br>
+              <div><br><br>
+                <span style="font-weight: bold; font-size: 26px;" id="feedback_string">Correct | Incorrect </span><br>
                 <button class="btn btn-danger" data-action="OK"> OK</button>
               </div>
             </div>
@@ -190,7 +187,7 @@
           <div class="row">
             <div class="col">
               <div>
-                <br>
+                <br><br>
                 <h2 id="message"> <h2><br>
                   <p id="message2"> </p>
                   <span> Thank you for taking the quiz!</span><br>

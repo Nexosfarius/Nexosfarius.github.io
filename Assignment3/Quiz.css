@@ -20,3 +20,12 @@ img {
 button {
   margin:7px;
 }
+body {
+  background-color: lightgrey;
+}
+#scoreboard {
+  background-color: grey;
+}
+#widget_view {
+  background-color: grey;
+}
