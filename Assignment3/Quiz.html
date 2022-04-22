@@ -76,7 +76,7 @@
         <div class="container">
           <div class="row">
             <div class="col">
-              <div><br><br>
+              <div><br><br><br><br><br><br>
                 <span style="font-weight: bold; font-size: 26px;"> Press start to begin the app</span><br>
                 <button  id = 'timer' class="btn btn-danger" data-action="{{this.action}}">START</button>
               </div>
@@ -161,7 +161,7 @@
           <div class="row">
             <div class="col">
               <div><br><br>
-                <span id="feedback_string" style="font-weight: bold; font-size: 26px;">Correct | Incorrect </span><br>
+                <span id="feedback_string" style="font-weight: bold; font-size: 26px;"> {{this.compliment}}</span><br>
                 <button class="btn btn-danger" data-action="ok"> OK</button>
               </div>
             </div>
@@ -174,7 +174,7 @@
           <div class="row">
             <div class="col">
               <div><br><br>
-                <span style="font-weight: bold; font-size: 26px;" id="feedback_string">Correct | Incorrect </span><br>
+                <span style="font-weight: bold; font-size: 26px;" id="feedback_string"> {{this.explanation}} </span><br>
                 <button class="btn btn-danger" data-action="OK"> OK</button>
               </div>
             </div>

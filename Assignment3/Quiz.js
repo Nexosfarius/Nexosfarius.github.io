@@ -14,6 +14,7 @@ const appState = {
   current_model : {
     action : "start_app"
 }}
+
 function timer(x){
   let hours = 0;
   let minutes = 0;

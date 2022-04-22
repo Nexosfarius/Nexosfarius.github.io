@@ -4,21 +4,24 @@
     "questionText" : "What is the most popular coding language of 2022?",
     "correctAnswer" : "Python",
     "options" : ["Java", "Python", "JavaScript"],
-    "explanation" : "While it is pretty close at the top, Python is already used by 80% of programmers and that statistic is growing."
+    "explanation" : "While it is pretty close at the top, Python is already used by 80% of programmers and that statistic is growing.",
+    "compliment" : "Great work!"
   },
   {
     "questionType" : "narrative_text_response",
     "questionText" : "Which of the below descriptions best describes machine learning?",
     "correctAnswer" : "Machine learning is a subfield of artificial intelligence, which is broadly defined as the capability of a machine to imitate intelligent human behavior.",
     "options" : ["Machine learning is a programming language that is used along with python to create android games.", "Machine learning is a way for computer scientists to create robots.", "Machine learning is a subfield of artificial intelligence, which is broadly defined as the capability of a machine to imitate intelligent human behavior."],
-    "explanation" : "Machine learning is a part of AI and is a part of the goal to make machines copy human behavior.
+    "explanation" : "Machine learning is a part of AI and is a part of the goal to make machines copy human behavior.",
+    "compliment" : "Nice job!"
   },
   {
     "questionType" : "true_false",
     "questionText" : "The goal of AI is to create computer models that exhibit “intelligent behaviors” like humans.",
     "correctAnswer" : "True",
     "options" : ["True", "False"],
-    "explanation" : "The final goal of AI is to be able to teach robots the way of human learning so that they can learn for themselves and can almost act like humans."
+    "explanation" : "The final goal of AI is to be able to teach robots the way of human learning so that they can learn for themselves and can almost act like humans.",
+    "compliment" : "Awesome!"
   },
   {
     "questionType" : "image_selection",
@@ -26,35 +29,40 @@
     "correctAnswer" : "apple",
     "options" : ["true", "apple", "pear"],
     "link" : ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1WZfKG76HXAyO8DJmGOJo6bj_bSsy7VPoVQ&usqp=CAU","https://i.pinimg.com/originals/8f/ad/12/8fad125b8f6082bdb7deb0aa593dfb49.jpg","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD8bMq2U-B3wuUSZjZmmrR7FBsxLIt-Syegw&usqp=CAU"],
-    "explanation" : "The python logo is similar to an s that has 2 snakes as the curves. The second one is the exact logo."
+    "explanation" : "The python logo is similar to an s that has 2 snakes as the curves. The second one is the exact logo.",
+    "compliment" : "You're doing great!"
   },
   {
     "questionType" : "text_input",
     "questionText" : "What coding language is C++ based on and an extension of?",
     "correctAnswer" : "C",
     "answerFieldId" : "answer_to_question",
-    "explanation" : "C++ was based off of C as an extension that would preform similarly to C but would be able to use OOP."
+    "explanation" : "C++ was based off of C as an extension that would preform similarly to C but would be able to use OOP.",
+    "compliment" : "That was sick!"
   },
   {
     "questionType" : "multiple_choice",
     "questionText" : "How many coding languages are there?",
     "correctAnswer" : "More than 700.",
     "options" : ["More than 700.", "Between 300 and 700.", "Less than 300."],
-    "explanation" : "Incredibly, there are in fact more than 700 different programming languages in the world. That is actually more that how many seaking languages there are."
+    "explanation" : "Incredibly, there are in fact more than 700 different programming languages in the world. That is actually more that how many seaking languages there are.",
+    "compliment" : "OMG!"
   },
   {
     "questionType" : "narrative_text_response",
     "questionText" : "Where did the term coding bugs come from?",
     "correctAnswer" : "There was a Harvard student who found out that the thing causing his computer to malfunction was a moth in the relay.",
     "options" : ["There was a professor in MIT who thought of the term when a fly kept bothering him while he was fixing code errors.", "There was a Harvard student who found out that the thing causing his computer to malfunction was a moth in the relay.", "Neither of these is the correct reason why."],
-    "explanation" : "There was a day when a Harvard admin was trying to figure out why some of his computers weren't working correctly and when he opened the main machine up, he saw that there was a moth that had found a way in."
+    "explanation" : "There was a day when a Harvard admin was trying to figure out why some of his computers weren't working correctly and when he opened the main machine up, he saw that there was a moth that had found a way in.",
+    "compliment" : "Great!"
   },
   {
     "questionType" : "true_false",
     "questionText" : "The first programmer was the son of a mad poet.",
     "correctAnswer" : "False",
     "options" : ["True", "False"],
-    "explanation" : "Rather than a son, it was actually the daughter of a mad poet who is considered one of the creators of modern programming theory."
+    "explanation" : "Rather than a son, it was actually the daughter of a mad poet who is considered one of the creators of modern programming theory.",
+    "compliment" : "Wow!"
   },
   {
     "questionType" : "image_selection",
@@ -62,35 +70,40 @@
     "correctAnswer" : "false",
     "options" : ["true", "false", "apple"],
     "link" : ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM2JiRHOn91BqpPpJNFkldvo4afrbPehmPGw&usqp=CAU","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCc8Oka5KG7mzlkpeRZE8nVR_KjK4_mMg0NQ&usqp=CAU","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWAKzUkmewB7ktfvHR8BnrvBQVPgbX50a0-w&usqp=CAU"],
-    "explanation" : "Artificial Intelligence is most commonly referred to as AI when trying to speak about it in passing."
+    "explanation" : "Artificial Intelligence is most commonly referred to as AI when trying to speak about it in passing.",
+    "compliment" : "Incredible!"
   },
   {
     "questionType" : "text_input",
     "questionText" : "What is the word that describes code based on either zeroes or ones. ",
     "correctAnswer" : "Binary",
     "answerFieldId" : "answer_to_question",
-    "explanation" : "The answer is binary since there is only 2 possible numbers, hence the bi in binary."
+    "explanation" : "The answer is binary since there is only 2 possible numbers, hence the bi in binary.",
+    "compliment" : "Crazy!"
   },
   {
     "questionType" : "multiple_choice",
     "questionText" : "What is the name of the language that was named after a famous French mathematician?",
     "correctAnswer" : "Pascal",
     "options" : ["Pascal", "Gauss", "Euler"],
-    "explanation" : "Pascal was the famous french mathematician. Gauss and Euler were also pretty famous but both were not french either."
+    "explanation" : "Pascal was the famous french mathematician. Gauss and Euler were also pretty famous but both were not french either.",
+    "compliment" : "Nuts!"
   },
   {
     "questionType" : "narrative_text_response",
     "questionText" : "Neural networks, also known as artificial neural networks (ANNs) or simulated neural networks (SNNs), are a subset of machine learning and are at the heart of deep learning algorithms. What part of the human body are they named after?",
     "correctAnswer" : "The Human Brain",
     "options" : ["The Human Lungs", "The Human Brain", "The Computer Database Systems"],
-    "explanation" : "Neural networks seek to copy how the human brian learns to see if that same way of learning can be copied in robots."
+    "explanation" : "Neural networks seek to copy how the human brian learns to see if that same way of learning can be copied in robots.",
+    "compliment" : "Coolio!"
   },
   {
     "questionType" : "true_false",
     "questionText" : "The first computer used electricity.",
     "correctAnswer" : "False",
     "options" : ["True", "False"],
-    "explanation" : "The first computer was not powered by electricity but was rather just a hand-worked machine."
+    "explanation" : "The first computer was not powered by electricity but was rather just a hand-worked machine.",
+    "compliment" : "Awesome!"
   },
   {
     "questionType" : "image_selection",
@@ -98,35 +111,40 @@
     "correctAnswer" : "true",
     "options" : ["true", "false", "apple"],
     "link" : ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvKdEQYvhFo007QfPDr6S4eo8QvVXYT-GJBg&usqp=CAU","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5b1jZ1Z_fBOpF_BZOPsi5SSg-K7cvjthgqg&usqp=CAU","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ72LBOvKb7AeLlgbkWQYap-0gB-p0kH-RCgQ&usqp=CAU"],
-    "explanation" : "The atom logo looks like an atom (obviously) so it is clear that the first picture is the correct one."
+    "explanation" : "The atom logo looks like an atom (obviously) so it is clear that the first picture is the correct one.",
+    "compliment" : "Woah!"
   },
   {
     "questionType" : "text_input",
     "questionText" : "How old was the youngest coder ever?",
     "correctAnswer" : "6",
     "answerFieldId" : "answer_to_question",
-    "explanation" : "The youngest coder ever was 6 years old when he took the microsoft coding profisciency test and passed it."
+    "explanation" : "The youngest coder ever was 6 years old when he took the microsoft coding profisciency test and passed it.",
+    "compliment" : "Exemplary!"
   },
   {
     "questionType" : "multiple_choice",
     "questionText" : "Where was the first virus created?",
     "correctAnswer" : "Pakistan",
     "options" : ["America", "Pakistan", "India"],
-    "explanation" : "The first virus was created in Pakistan as a harmless replicating virus that stated copyrights."
+    "explanation" : "The first virus was created in Pakistan as a harmless replicating virus that stated copyrights.",
+    "compliment" : "Stupendous!"
   },
   {
     "questionType" : "narrative_text_response",
     "questionText" : "There was a famous mathmetician named Alexander Turing who cracked the cipher the Nazis used in WW2. What was the cipher machine called?",
     "correctAnswer" : "The enigma machine.",
     "options" : ["The Enigma Machine.", "The crypto machine.", "The randomizer machine."],
-    "explanation" : "The enigma machine was a machine used by the Nazis very famous for how difficult it was to crack. It had a cycling key that changed daily so it was very difficult for Alexander Turing to finally crack it."
+    "explanation" : "The enigma machine was a machine used by the Nazis very famous for how difficult it was to crack. It had a cycling key that changed daily so it was very difficult for Alexander Turing to finally crack it.",
+    "compliment" : "Cool!"
   },
   {
     "questionType" : "true_false",
     "questionText" : "The first computer game ever made zero profit for it's creators.",
     "correctAnswer" : "True",
     "options" : ["True", "False"],
-    "explanation" : "The first computer game was created for fun and was left free so everyone could enjoy it."
+    "explanation" : "The first computer game was created for fun and was left free so everyone could enjoy it.",
+    "compliment" : "Awesome!"
   },
   {
     "questionType" : "image_selection",
@@ -134,13 +152,15 @@
     "correctAnswer" : "apple",
     "options" : ["true", "false", "apple"],
     "link" : ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK4im9SMQs4wS6p7dcM4XjqNufZEoiPJ_82g&usqp=CAU","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQdA_2Vi350-blMARDU4bOdXkXaanfyYmPVg&usqp=CAU","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTpQt1MC_YS-F98Gdqboh827pVdUl13uOvBQ&usqp=CAU"],
-    "explanation" : "Java is an object oriented language which is why the correct answer is OOP."
+    "explanation" : "Java is an object oriented language which is why the correct answer is OOP.",
+    "compliment" : "Nice job!"
   },
   {
     "questionType" : "text_input",
     "questionText" : "What type of hacker is the good kind? Black Hat or White Hat?",
     "correctAnswer" : "White Hat",
     "answerFieldId" : "answer_to_question",
-    "explanation" : "There are many types of hackers but 2 of the main ones are Black Hat(who hack illegally) and White Hat(who hack to find vulnerabilities legally)."
+    "explanation" : "There are many types of hackers but 2 of the main ones are Black Hat(who hack illegally) and White Hat(who hack to find vulnerabilities legally).",
+    "compliment" : "Great work!"
     }]
   }
