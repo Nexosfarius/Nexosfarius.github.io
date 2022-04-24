@@ -142,9 +142,11 @@ if (appState.current_view == "#question_view_true_false") {
       total += 1;
       badFeedback(appState);
       console.log("true false success");
-      updateQuestion(appState);
-      setQuestionView(appState);
-      update_view(appState);
+      setTimeout(() => {
+        updateQuestion(appState);
+        setQuestionView(appState);
+        update_view(appState);
+      }, 100000);
     }
   }
 }
@@ -168,9 +170,11 @@ if (appState.current_view == "#question_view_text_input") {
       total += 1;
       badFeedback(appState);
       console.log("text success");
-      updateQuestion(appState);
-      setQuestionView(appState);
-      update_view(appState);
+      setTimeout(() => {
+        updateQuestion(appState);
+        setQuestionView(appState);
+        update_view(appState);
+      }, 100000);
     }
   }
 }
@@ -193,9 +197,11 @@ if (appState.current_view == "#question_view_multiple_choice") {
       total += 1;
       badFeedback(appState);
       console.log("multiple choice bad success");
-      updateQuestion(appState);
-      setQuestionView(appState);
-      update_view(appState);
+      setTimeout(() => {
+        updateQuestion(appState);
+        setQuestionView(appState);
+        update_view(appState);
+      }, 100000);
     }
   }
 }
@@ -218,9 +224,11 @@ if (appState.current_view == "#question_view_narrative_text_response") {
       total += 1;
       badFeedback(appState);
       console.log("narrative success");
-      updateQuestion(appState);
-      setQuestionView(appState);
-      update_view(appState);
+      setTimeout(() => {
+        updateQuestion(appState);
+        setQuestionView(appState);
+        update_view(appState);
+      }, 100000);
     }
   }
 }
@@ -243,9 +251,11 @@ if (appState.current_view == "#question_view_image_selection") {
       total += 1;
       badFeedback(appState);
       console.log("image success");
-      updateQuestion(appState);
-      setQuestionView(appState);
-      update_view(appState);
+      setTimeout(() => {
+        updateQuestion(appState);
+        setQuestionView(appState);
+        update_view(appState);
+      }, 100000);
     }
   }
 }
@@ -298,6 +308,7 @@ function updateQuestion(appState) {
     get_data_fetch_async(appState);
   }
   else {
+    console.log("-2 end");
     appState.current_question = -2;
     appState.current_model = {};
   }
@@ -340,6 +351,7 @@ function setQuestionView(appState) {
 }
 
 function update_view(appState) {
+  console.log(appState)
   const html_element = render_widget(appState.current_model, appState.current_view)
   document.querySelector("#widget_view").innerHTML = html_element;
 }
