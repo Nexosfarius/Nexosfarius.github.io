@@ -133,8 +133,8 @@
   {
     "questionType" : "narrative_text_response",
     "questionText" : "There was a famous mathmetician named Alexander Turing who cracked the cipher the Nazis used in WW2. What was the cipher machine called?",
-    "correctAnswer" : "The enigma machine.",
-    "options" : ["The Enigma Machine.", "The crypto machine.", "The randomizer machine."],
+    "correctAnswer" : "The Enigma Machine.",
+    "options" : ["The Enigma Machine.", "The Crypto Machine.", "The Randomizer Machine."],
     "explanation" : "The enigma machine was a machine used by the Nazis very famous for how difficult it was to crack. It had a cycling key that changed daily so it was very difficult for Alexander Turing to finally crack it.",
     "compliment" : "Cool!"
   },
