@@ -23,9 +23,10 @@
 
 /* General Styling */
 body {
-  background-color: #f0f0f0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   line-height: 1.6;
+  color: #343a40;
 }
 
 .profile {
@@ -35,7 +36,7 @@ body {
   width: 150px;
   height: 150px;
   object-fit: cover;
-  border: 5px solid white;
+  border: 5px solid #ffffff;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
 }
 
@@ -44,11 +45,13 @@ h1 {
   font-size: 2rem;
   font-weight: 700;
   margin-top: 20px;
+  font-family: 'Georgia', serif;
 }
 
 p, li, td, th {
   font-size: 1rem;
-  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #495057;
 }
 
 ul {
@@ -61,13 +64,13 @@ li {
 }
 
 table, th, td {
-  border: 1px solid #ccc;
+  border: 1px solid #dee2e6;
   padding: 8px;
-  background-color: #e6f2ff;
+  background-color: #e9f7fd;
 }
 
 a:link, a:visited {
-  color: #003366;
+  color: #007bff;
   text-decoration: none;
   font-weight: bold;
 }
@@ -82,20 +85,20 @@ form {
   margin: 20px auto;
   border: 2px solid #000;
   padding: 20px;
-  background-color: #fff8dc;
+  background-color: #fff3cd;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-/* Section Colors */
-#Site_Menu { background-color: #b30000; color: white; padding: 10px; }
-#Basic_Information { background-color: #FF3131; }
-#Education { background-color: #ff9900; }
-#Experience { background-color: #ffff66; }
-#Programming_Skills { background-color: #66cc66; }
-#Interests { background-color: #b3e0ff; }
-#Favorite_Videos { background-color: #4b0082; color: white; }
-#Favorite_Website { background-color: #cc99ff; }
-#Projects { background-color: #ffd700; }
+/* Section Colors - Modernized */
+#Site_Menu { background-color: #343a40; color: white; padding: 10px; }
+#Basic_Information { background-color: #f8d7da; }
+#Education { background-color: #fff3cd; }
+#Experience { background-color: #d4edda; }
+#Programming_Skills { background-color: #cce5ff; }
+#Interests { background-color: #e2e3e5; }
+#Favorite_Videos { background-color: #d1c4e9; color: black; }
+#Favorite_Website { background-color: #fce4ec; }
+#Projects { background-color: #f0f8ff; }
 
 /* Navbar Tweaks */
 .navbar-nav {
@@ -106,4 +109,5 @@ form {
 .navbar .nav-link {
   padding-left: 15px;
   padding-right: 15px;
+  color: #ffffff !important;
 }
